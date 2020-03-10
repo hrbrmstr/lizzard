@@ -45,6 +45,8 @@ remotes::install_git("https://git.sr.ht/~hrbrmstr/lizzard")
 remotes::install_gitlab("hrbrmstr/lizzard")
 # or
 remotes::install_bitbucket("hrbrmstr/lizzard")
+# or
+remotes::install_github("hrbrmstr/lizzard")
 ```
 
 NOTE: To use the ‘remotes’ install options you will need to have the
