@@ -20,3 +20,4 @@
 ^appveyor\.yml$
 ^tools$
 ^LICENSE\.md$
+^java$

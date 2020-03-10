@@ -10,7 +10,7 @@ by](https://img.shields.io/badge/Keybase-Verified-brightgreen.svg)](https://keyb
 Status](https://travis-ci.org/hrbrmstr/lizzard.svg?branch=master)](https://travis-ci.org/hrbrmstr/lizzard)  
 ![Minimal R
 Version](https://img.shields.io/badge/R%3E%3D-3.2.0-blue.svg)
-![License](https://img.shields.io/badge/License-GPL-3-blue.svg)
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
 
 # lizzard
 
@@ -20,7 +20,7 @@ Compute and Compare Lempel-Ziv Jaccard (LZJD) Similarity Hashes
 
 The Lempel-Ziv Jaccard Distance (LZJD) is a method to measure the
 similarity between binary byte sequences. Tools are provided that wrap
-Java methods by Raff et al, (2017) \<arXiv:1708.03346v2\> for computing
+Java methods by Raff et al, (2017) (arXiv:1708.03346v2) for computing
 and comparing LZJD hashes.
 
 ## What’s Inside The Tin
