@@ -4,9 +4,11 @@
 \name{lizzard}
 \alias{lizzard}
 \alias{lizzard-package}
-\title{...}
+\title{Compute and Compare Lempel-Ziv Jaccard (LZJD) Similarity Hashes}
 \description{
-A good description goes here otherwise CRAN checks fail.
+The Lempel-Ziv Jaccard Distance (LZJD) is a method to measure the similarity between binary byte sequences.
+Tools are provided that wrap Java methods by Raff et al, (2017) \url{arXiv:1708.03346v2} for computing
+and comparing LZJD hashes.
 }
 \seealso{
 Useful links:

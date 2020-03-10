@@ -39,6 +39,50 @@ packageVersion("lizzard")
 
 ```
 
+- `index.html` is a static copy of a blog main page with a bunch of `<div>`s with article snippets
+- `index1.html` is the same file as `index.htmnl` with a changed cache timestamp at the end
+- `index2.html` is the same file as `index.html` with one article snippet removed
+- `RMacOSX-FAQ.html` is the CRAN 'R for Mac OS X FAQ'
+
+```{r}
+(h1 <- min_hash_for_file(system.file("extdat", "index.html", package = "lizzard")))
+
+(h2 <- min_hash_for_file(system.file("extdat", "index1.html", package = "lizzard")))
+
+(h3 <- min_hash_for_file(system.file("extdat", "index2.html", package = "lizzard")))
+
+(h4 <- min_hash_for_file(system.file("extdat", "RMacOSX-FAQ.html", package = "lizzard")))
+
+str(h4, 1)
+
+as.character(h4)
+
+str(as_lzjd_hash(as.character(h4)), 1)
+
+identical(as_lzjd_hash(as.character(h4)), h4)
+
+compute_similarity(h1, h1)
+compute_distance(h1, h1)
+
+compute_similarity(h1, h2)
+compute_distance(h1, h2)
+
+compute_similarity(h1, h3)
+compute_distance(h1, h3)
+
+compute_similarity(h1, h4)
+compute_distance(h1, h4)
+
+compute_similarity(h2, h3)
+compute_distance(h2, h3)
+
+compute_similarity(h2, h4)
+compute_distance(h2, h4)
+
+compute_similarity(h3, h4)
+compute_distance(h3, h4)
+```
+
 ## lizzard Metrics
 
 ```{r cloc, echo=FALSE}

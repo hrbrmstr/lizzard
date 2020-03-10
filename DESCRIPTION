@@ -1,6 +1,6 @@
 Package: lizzard
 Type: Package
-Title: lizzard title goes here otherwise CRAN checks fail
+Title: Compute and Compare Lempel-Ziv Jaccard (LZJD) Similarity Hashes
 Version: 0.1.0
 Date: 2020-03-10
 Authors@R: c(
@@ -8,17 +8,17 @@ Authors@R: c(
            comment = c(ORCID = "0000-0001-5670-2640"))
   )
 Maintainer: Bob Rudis <bob@rud.is>
-Description: A good description goes here otherwise CRAN checks fail.
+Description: The Lempel-Ziv Jaccard Distance (LZJD) is a method to measure the similarity between binary byte sequences.
+    Tools are provided that wrap Java methods by Raff et al, (2017) <arXiv:1708.03346v2> for computing 
+    and comparing LZJD hashes.
 URL: https://git.rud.is/hrbrmstr/lizzard
 BugReports: https://git.rud.is/hrbrmstr/lizzard/issues
 Encoding: UTF-8
-License: AGPL
+License: GPL-3
 Suggests: 
     covr, tinytest
 Depends: 
-    R (>= 3.2.0)
-Imports: 
-    httr,
-    jsonlite
+    R (>= 3.2.0),
+    rJava
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.0.2
